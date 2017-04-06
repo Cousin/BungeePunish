@@ -41,9 +41,7 @@ public class CaribbeanBans extends Plugin {
 
         punishmentManager = new PunishmentManager();
 
-        /*
-            "Synchronously" loading MySQL async. FutureTasks or running sync were causing IllegalStateExceptions
-         */
+        // "Synchronously" loading MySQL async. FutureTasks or running sync were causing IllegalStateExceptions
         AtomicBoolean doneLoading = new AtomicBoolean(false);
 
         getPlugin().getProxy().getScheduler().runAsync(this, () -> {
