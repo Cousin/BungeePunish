@@ -1,0 +1,7 @@
+main: xyz.betanyan.carribeanbans.CarribeanBans
+version: 1.0
+name: CarribeanBans
+author: BetaNyan
+
+commands:
+  punish:
